@@ -71,10 +71,24 @@ body {
 }
 
 .blog-post {
-  font-size: 18px;
+  font-size: 20px;
   text-align: justify;
   line-height: 1.5;
   font-weight: 400;
+}
+
+.blog-post p {
+  margin-bottom: 1rem;
+}
+
+.mark-point {
+  list-style-type: decimal-leading-zero;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.mark-point code {
+  color: #9dffad
 }
 
 /* ================================ */

@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog - Speed Monster. Know Important Interview Question Answer</title>
+
+    <title>Blog - Know Important Interview Question Answer</title>
+    <link rel="shortcut icon" href="blog-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,56 +29,178 @@
                 <div class="blog">
                     <h2 class="blog-title">Question-01: What are the main difference between local storage and session
                         storage?</h2>
-                    <p class="blog-post">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae non est quidem
-                        nulla eveniet
-                        tempora
-                        tempore. Laudantium tempore praesentium dolores fugit, deserunt distinctio exercitationem
-                        facilis,
-                        dolorum velit totam modi eaque consequatur, asperiores quo rerum aliquid voluptatum nisi
-                        perferendis
-                        nihil odit numquam dolorem. Fugiat consectetur praesentium, quis omnis voluptas dignissimos
-                        maiores?
+                    <p class="blog-post">
+                        The Browser Storage or the Client-side Storage works on similar principles to the server-side
+                        storage but has different
+                        use cases. It consists of JavaScript APIs that allow us to store data on the client (i.e., on
+                        the user's machine), and
+                        then it could be retrieved when needed. Some of the differences between session storage and
+                        local
+                        storage are given below:
+
+
+                        <li class="mark-point">localStorage is similar to sessionStorage, except that while data stored
+                            in localStorage has
+                            no expiration time, data
+                            stored in sessionStorage gets cleared when the page session ends — that is, when the page is
+                            closed.
+                        </li>
+                        <li class="mark-point">
+                            data stored in either localStorage or sessionStorage is specific to the origin of the page,
+                            which is a combination of
+                            the protocol, host and the port.
+                        </li>
+                        <li class="mark-point">
+                            Session storage stores data for a specific period of time. This means that SessionStorage
+                            data life is for a limited
+                            time. As long as the user closes the tab, session storage data also remove from the session
+                            storage. On the other hand,
+                            when we store data in local storage it stores that data permanently in the browser. Whenever
+                            the user returns to that
+                            tab he gets back all the data that he stores in localStorage.
+                        </li>
+
                     </p>
                 </div>
                 <div class="blog">
-                    <h2 class="blog-title">Question-02: Briefly discuss the difference between Local Storage and session
-                        storage?</h2>
-                    <p class="blog-post">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae non est quidem
-                        nulla eveniet
-                        tempora
-                        tempore. Laudantium tempore praesentium dolores fugit, deserunt distinctio exercitationem
-                        facilis,
-                        dolorum velit totam modi eaque consequatur, asperiores quo rerum aliquid voluptatum nisi
-                        perferendis
-                        nihil odit numquam dolorem. Fugiat consectetur praesentium, quis omnis voluptas dignissimos
-                        maiores?
-                    </p>
+                    <h2 class="blog-title">Question-02: difference between Global scope and block
+                        scope?</h2>
+                    <div class="blog-post">
+                        <p>
+                            "Scope" means which variable is accessible and up to which point it is accessible. In
+                            javascript, the whole document is
+                            the global scope and all the other functions and variables are contained in this global
+                            scope.
+                        </p>
+                        <p>
+                            Another is the Local Scope when we declared variables inside the functions are considered to
+                            be of the local scope and
+                            it is further divided into function scoped and block scope. A variable when declared inside
+                            the if or switch conditions
+                            or inside for or while loops, are accessible within that particular condition or loop.
+                        </p>
+                        <p>
+                            To be consistent the variables declared inside the curly braces are called within block
+                            scope. var is called a function
+                            scope that is if a variable is declared using the var keyword it will be accessible
+                            throughout the function.
+                        </p>
+                        <p>
+                            let & const are also called block scope that is they are accessible within that particular
+                            block. Here let is used for
+                            variables that can be changed as we proceed through the program whereas const is used for a
+                            variable that doesn't change
+                            till the program ends, that is it remains constant throughout the program.
+                        </p>
+                    </div>
                 </div>
                 <div class="blog">
                     <h2 class="blog-title">Question 03: Discuss how Js Event Loop work?</h2>
-                    <p class="blog-post">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae non est quidem
-                        nulla eveniet
-                        tempora
-                        tempore. Laudantium tempore praesentium dolores fugit, deserunt distinctio exercitationem
-                        facilis,
-                        dolorum velit totam modi eaque consequatur, asperiores quo rerum aliquid voluptatum nisi
-                        perferendis
-                        nihil odit numquam dolorem. Fugiat consectetur praesentium, quis omnis voluptas dignissimos
-                        maiores?
-                    </p>
+                    <div class="blog-post">
+                        <p>
+                            The event loop is the secret behind JavaScript's asynchronous programming. JS executes all
+                            operations on a single
+                            thread, but using a few smart data structures, it gives us the illusion of multi-threading.
+                        </p>
+                        <p>
+                            Whenever an async function is called, it is sent to a browser API. These are APIs built into
+                            the browser. Based on the
+                            command received from the call stack, the API starts its own single-threaded operation.
+                        </p>
+                        <p>
+                            The Event Loop has one simple job to monitor the Call Stack
+                            and the Callback Queue. If the Call Stack is empty, it will
+                            take the first event from the queue and will push it to the
+                            Call Stack, which effectively runs it. Such an iteration is
+                            called a tick in the Event Loop. Each event is just a function
+                            callback.
+                        </p>
+                    </div>
                 </div>
                 <div class="blog">
                     <h2 class="blog-title">Question 04: Discuss how many ways we get undefined value?</h2>
-                    <p class="blog-post">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae non est quidem
-                        nulla eveniet
-                        tempora
-                        tempore. Laudantium tempore praesentium dolores fugit, deserunt distinctio exercitationem
-                        facilis,
-                        dolorum velit totam modi eaque consequatur, asperiores quo rerum aliquid voluptatum nisi
-                        perferendis
-                        nihil odit numquam dolorem. Fugiat consectetur praesentium, quis omnis voluptas dignissimos
-                        maiores?
-                    </p>
+                    <div class="blog-post">
+                        <p>
+                            Undefined is a primitive value in JavaScript. A variable or an object has an undefined
+                            value when no value is
+                            assigned before using it. So we can say that undefined means lack of value or unknown
+                            value. Let's see when and how we get an undefined value:-
+                        </p>
+                        <li class="mark-point">
+                            declare var but value not initialized. When we declare a variable but we didn't set any
+                            value then it will show an undefined result. Example: <br>
+                            <code>
+                                let first;//undefined
+                            </code>
+                        </li>
+                        <li class="mark-point">
+                            function with no return will also show an undefined result. Example: <br>
+                            <code>
+                                function second(a, b) { <br>
+                                const total = a + b;<br>
+                                }<br>
+                                const result = second();//undefined
+                            </code>
+                        </li>
+                        <li class="mark-point">
+                            If we declare parameters but will not passed will also output and undefined
+                            value. Example:<br>
+                            <code>
+                                function third(a, b, c, d) { <br>
+                                const total = a + b + c + d; <br>
+                                console.log(a, b, c, d);
+                                }<br>
+                                third(2, 3);// 2 3 undefined undefined
+                            </code>
+                        </li>
+                        <li class="mark-point">
+                            if return has nothing on the right side will also return undefined. Ex: <br>
+                            <code>
+                                function noNegative(a, b) { <br>
+                                if (a < 0 || b < 0) {<br>
+                                    return;<br>
+                                }<br>
+                                return a + b;<br>
+                            }<br>
+                                const total=noNegative(2, -5);//undefined
+                            </code>
+                        </li>
+                        <li class="mark-point">
+                            Property that doesn't exist on an object will give an undefined value. Ex: <br>
+                            <code>
+                                const obj = { name: "ismail", age: 23 }; <br>
+                                console.log(obj.profession);//undefined
+                            </code>
+
+                        </li>
+                        <li class="mark-point">
+                            accessing array element outside of the index range will give undefined. Ex: <br>
+                            <code>
+                                const arr = [12, 3, 4, 5] <br>
+                                console.log(arr[5]);//undefined
+
+                            </code>
+                        </li>
+                        <li class="mark-point">
+                            if we delete and array element then want to get it. <br>
+                            <code>
+                                const arr = [12, 3, 4, 5] <br>
+                                delete arr[1];<br>
+                                console.log(arr);//[ 12, <1 empty item>, 4, 5 ]
+                            </code>
+                        </li>
+                        <li class="mark-point">
+                            set a value directly to undefined. If we set a variable value to undefined then it will also
+                            return an undefined result. Ex: <br>
+                            <code>
+                            const age = undefined; <br>
+                            console.log(age);//undefined
+                           </code>
+
+                        </li>
+                        Finally Above way we get and undefined value. if a value doesn't exist and we explicitly want to
+                        set that value we can use null.
+                    </div>
                 </div>
             </div>
         </section>
