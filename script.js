@@ -43,9 +43,9 @@ const typeController = (e) => {
   const newLetterCorrect = validate(newLetter);
 
   if (newLetterCorrect) {
-    display.innerHTML += `<span class="green">${newLetter === " " ? "▪" : newLetter}</span>`;
+    display.innerHTML += `<span class="green">${ newLetter === " " ? "▪" : newLetter }</span>`;
   } else {
-    display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    display.innerHTML += `<span class="red">${ newLetter === " " ? "▪" : newLetter }</span>`;
   }
 
   // check if given question text is equal to user typed text
@@ -80,8 +80,8 @@ const gameOver = () => {
   // show result
   resultModal.innerHTML += `
     <h1>Finished!</h1>
-    <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
-    <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
+    <p>You took: <span class="bold">${ timeTaken }</span> seconds</p>
+    <p>You made <span class="bold red">${ errorCount }</span> mistakes</p>
     <button onclick="closeModal()">Close</button>
   `;
 
@@ -135,5 +135,5 @@ setInterval(() => {
   const timeSpent = (currentTime - startTime) / 1000;
 
 
-  document.getElementById("show-time").innerHTML = `${startTime ? timeSpent : 0} seconds`;
+  document.getElementById("show-time").innerHTML = `${ startTime ? timeSpent : 0 } seconds`;
 }, 1000);
