@@ -277,4 +277,23 @@ button {
   .card {
     flex-direction: column;
   }
+
+  .blog {
+    width: 400px;
+    margin: 0 auto;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+
+  .blog-title {
+    line-height: 1;
+    font-size: 1.5rem;
+  }
+
+  .blog-post,
+  .mark-point {
+    text-align: start;
+    font-size: 18px;
+    line-height: 1.5;
+  }
 }
